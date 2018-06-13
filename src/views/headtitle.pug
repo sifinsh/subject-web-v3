@@ -1,0 +1,41 @@
+.row
+  .col-sm-12
+    .height50p
+    .column_t
+      .explain 头条
+      pre.declare
+        | 头条文字长度为
+        span.red 22
+        | 个字，不可折行，手机可以显示
+        span.red 2
+        | 行
+        | 头条为
+        span.blue 头条属性
+        | ，延伸阅读为
+        span.blue 普通属性
+      .button_box
+        span 信息片ID
+        input.importbox_l.info_t(type="text")
+        | 　
+        input.check_t(type="checkbox" checked="true")
+        span 是否需要延伸条
+        | 　
+        span 需要
+        input.importbox_s.order_t(type="text")
+        span 个延伸阅读
+        | 　
+        button.assign_btn_t 参数赋值
+        button.copy_btn_t 复制代码
+      .headtitle
+        h2
+          a.transdelay(href="#") 头条标题内容文字
+        .htmore
+          span
+            a(href="#") [ 标题内容文字 ]
+          span
+            a(href="#") [ 标题内容文字 ]
+          span
+            a(href="#") [ 标题内容文字 ]
+      .templates_t.hide
+        pre
+          code.temp-code nodeid="1" Repeat Begin=1 End=1 htmore

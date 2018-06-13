@@ -1,0 +1,68 @@
+script(src="http://www.qstheory.cn/n5/h5boot/jquery.min.js")
+script(src="http://www.qstheory.cn/n7/js/swiper.min.js")
+script(src="http://www.qstheory.cn/n5/js/hqwg/pgwmenu.min.js")
+script(src="scripts/v7_subject_v3.0.js")
+script.
+  $(function() {
+    //reset rem
+    function setbaseFont() {
+      var w_width = $(window).width();
+      var baseFontSize = w_width / 10;
+      $('html').css('font-size', baseFontSize + 'px');
+    }
+    setbaseFont();
+    $(window).on('resize', function(e) {
+      setbaseFont();
+    });
+    //swiper焦点图
+    var swiper = new Swiper('.swiper-container1', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      parallax: true,
+      autoplay: 2500,
+      speed: 600,
+      preloadImages: false,
+      lazyLoading: true,
+      loop: true
+    });
+    var swiper2 = new Swiper('.swiper-container2', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      parallax: true,
+      autoplay: 2500,
+      speed: 600,
+      preloadImages: false,
+      lazyLoading: true,
+      loop: true
+    });
+    //焦点图移入移出效果
+    $(".swiper-container1").mouseenter(function () {
+      swiper.stopAutoplay();
+    }).mouseleave(function () {
+      swiper.startAutoplay();
+    });
+    $(".swiper-container2").mouseenter(function () {
+      swiper2.stopAutoplay();
+    }).mouseleave(function () {
+      swiper2.startAutoplay();
+    });
+    //右侧展开
+    $(".content").first().find(".fold").css("display", "none");
+    $(".content").first().find(".unfold").css("display", "block");
+    $(".content").hover(function () {
+      $(".fold").css("display", "none");
+      $(".unfold").css("display", "block");
+      $(this).siblings(".content").find(".fold").css("display", "block");
+      $(this).siblings(".content").find(".unfold").css("display", "none");
+    });
+    $('.pd_top').pgwMenu({
+      mainClassName: 'pd_top',
+      dropDownLabel: '导航',
+      viewMoreLabel: '更多',
+      viewMoreMaxWidth: 100
+    });
+  })
+
+

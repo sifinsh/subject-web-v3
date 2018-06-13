@@ -1,0 +1,40 @@
+{
+  "name": "shuoli",
+  "version": "1.0.0",
+  "keywords": [
+    "shuoli"
+  ],
+  "author": "yangfan <sifinsh@163.com> (http://www.niwo8.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^1.12.4",
+    "resetcss": "^1.0.3",
+    "sass": "^1.0.0-beta.4",
+    "swiper": "^3.4.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cache": "^0.4.6",
+    "gulp-clean": "^0.3.2",
+    "gulp-copy": "^1.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sifinsh/zt_shuoli_20180522.git"
+  },
+  "description": ""
+}

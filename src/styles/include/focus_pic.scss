@@ -1,0 +1,195 @@
+.swiper-button-next {
+    right: 20px;
+}
+
+.swiper-button-prev {
+    left: 20px;
+}
+
+.swiper-pagination {
+    text-align: right;
+    padding-right: 20px;
+    .swiper-pagination-bullet {
+        background-color: #fff;
+        opacity: 0.8;
+        border-radius: 0;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #d71518;
+    }
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction {
+    width: 120px;
+    right: 10px;
+    bottom: 20px;
+    left: auto;
+}
+
+@media (max-width: 767px) {
+    .swiper-pagination {
+        padding-right: 0;
+        text-align: center;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction {
+        width: 100%;
+        right: 0px;
+        bottom: 2rem;
+    }
+}
+
+.swiper-container1 {
+    .swiper-slide {
+        position: relative;
+        overflow: hidden;
+        transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        a {
+            width: 100%;
+            height: 100%;
+        }
+        .backpic {
+            width: 100%;
+            height: 107px;
+            background: url(http://www.qstheory.cn/n7/images/ceshi/v7_column_20171102_01.png);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 11;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            line-height: 1.2;
+            margin: 56px 130px 0 20px;
+            max-height: 30px;
+            overflow: hidden;
+        }
+        img {
+            width: 100%;
+        }
+        :hover img {
+            transform: scale(1.1, 1.1);
+            -webkit-transform: scale(1.1, 1.1);
+            -moz-transform: scale(1.1, 1.1);
+            -o-transform: scale(1.1, 1.1);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .swiper-container1 {
+        padding: 0 1rem 0 0;
+        .swiper-slide {
+            padding: 0 0.1rem 0 0;
+            .backpic {
+                width: 100%;
+                height: 1rem;
+                background-size: 100% 100%;
+            }
+        }
+        .swiper-slide-active .title {
+            font-size: 0.44rem;
+            margin: 0;
+            max-height: 0.52rem;
+            overflow: hidden;
+            padding: 0;
+            margin: 0.2rem 0.5rem 0;
+        }
+    }
+}
+
+.swiper-container2 {
+    background: #2b2b2b;
+    .swiper-slide {
+        position: relative;
+        .pic {
+            width: 65%;
+            float: left;
+            display: inline;
+            overflow: hidden;
+            transform: scale(1, 1);
+            -webkit-transform: scale(1, 1);
+            -moz-transform: scale(1, 1);
+            -o-transform: scale(1, 1);
+            img {
+                width: 100%;
+            }
+        }
+        :hover .pic img {
+            transform: scale(1.1, 1.1);
+            -webkit-transform: scale(1.1, 1.1);
+            -moz-transform: scale(1.1, 1.1);
+            -o-transform: scale(1.1, 1.1);
+        }
+        .text {
+            width: 35%;
+            float: left;
+            display: inline;
+            h2 {
+                font-size: 24px;
+                font-weight: bold;
+                margin: 25px 40px 20px;
+                line-height: 1.5;
+                color: #fff;
+                max-height: 72px;
+                overflow: hidden;
+                a {
+                    color: #fff;
+                }
+                a:hover {
+                    color: #fff;
+                }
+            }
+            span {
+                font-size: 15px;
+                line-height: 1.8;
+                color: #fff;
+                max-height: 108px;
+                overflow: hidden;
+                display: block;
+                margin: 0 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1052px) and (min-width: 768px) {
+    .swiper-container2 {
+        .swiper-slide {
+            .text {
+                h2 {
+                    font-size: 20px;
+                    max-height: 60px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .swiper-container2 {
+        padding: 0;
+        .swiper-slide {
+            .pic {
+                width: 100%;
+                float: none;
+            }
+            .text {
+                width: 100%;
+                float: none;
+                span {
+                    display: none;
+                }
+                h2 {
+                    font-size: 0.44rem;
+                    margin: 0.2rem 0.5rem;
+                    max-height: 1.32rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.tw01 {
+  width: 100%;
+  margin: 0 0 20px 0;
+  .pic {
+    width: 100%;
+    img {
+      width: 100%;
+      transition: .3s ease-out;
+    }
+  }
+  .text {
+    h2 {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2b2b2b;
+      line-height: 1.5;
+      max-height: 54px;
+      overflow: hidden;
+      margin: 20px 0 10px 0;
+      a {
+        color: #2b2b2b;
+      }
+    }
+    span {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.5;
+      max-height: 84px;
+      overflow: hidden;
+      display: block;
+    }
+  }
+}
+
+.tw01:hover {
+  .pic {
+    img {
+      transform: translate(0, -4px);
+    }
+  }
+  .text {
+    h2 {
+      a {
+        color: #cc0000;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .tw01 {
+    width: 99%;
+    margin: 0 auto 0.5rem;
+    .text {
+      h2 {
+        font-size: 0.44rem;
+        line-height: 1.2;
+        max-height: 1.02rem;
+        margin: 0.4rem 0.2rem 0 0.2rem;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+  .tw01:hover {
+    .pic {
+      img {
+        transform: none;
+      }
+    }
+  }
+}

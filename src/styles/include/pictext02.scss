@@ -1,0 +1,116 @@
+.tw02 {
+  overflow: hidden;
+  margin: 0 0 20px 0;
+  .text {
+    width: 65%;
+    float: left;
+    display: inline;
+    h2 {
+      font-size: 24px;
+      color: #2b2b2b;
+      font-weight: bold;
+      line-height: 1.5;
+      max-height: 36px;
+      overflow: hidden;
+      margin: 20px 0 10px;
+      a {
+        color: #2b2b2b;
+      }
+    }
+    span {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.8;
+      max-height: 76px;
+      overflow: hidden;
+      display: block;
+    }
+  }
+  .pic {
+    width: 35%;
+    float: left;
+    display: inline;
+    text-align: right;
+    img {
+      width: 100%;
+      max-width: 145px;
+      margin: 35px 32px 0 0;
+      transition: .3s ease-out;
+    }
+  }
+}
+
+.tw02:hover {
+  .text {
+    h2 {
+      a {
+        color: #cc0000;
+      }
+    }
+  }
+  .pic {
+    img {
+      transform: translate(4px, 0);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .tw02 {
+    margin: 0.5rem 0.4rem;
+    .text {
+      width: 60%;
+      h2 {
+        font-size: 0.5rem;
+        line-height: 1.5;
+        max-height: 2.25rem;
+        margin: 0;
+      }
+      span {
+        display: none;
+      }
+    }
+    .pic {
+      width: 40%;
+      img {
+        margin: 0.2rem 0 0 0;
+        padding-left: 0.5rem;
+        max-width: 100%;
+      }
+    }
+  }
+  .tw02:hover {
+    .pic {
+      img {
+        transform: none;
+      }
+    }
+  }
+}
+
+.fushu {
+  overflow: hidden;
+  margin: 20px 0 0 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+  .author {
+    float: left;
+    display: inline;
+    padding-right: 20px;
+  }
+  .source {
+    float: left;
+    display: inline;
+  }
+}
+
+@media (max-width: 767px) {
+  .fushu {
+    margin: 0.3rem 0 0 0;
+    font-size: 0.36rem;
+    .author {
+      padding-right: 0.3rem;
+    }
+  }
+}
