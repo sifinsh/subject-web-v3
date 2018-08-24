@@ -21,7 +21,7 @@ script.
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
       parallax: true,
-      autoplay: 2500,
+      autoplay: 5000,
       speed: 600,
       preloadImages: false,
       lazyLoading: true,
@@ -31,11 +31,64 @@ script.
       pagination: '.swiper-pagination',
       paginationClickable: true,
       parallax: true,
-      autoplay: 2500,
+      autoplay: 5000,
       speed: 600,
       preloadImages: false,
       lazyLoading: true,
       loop: true
+    });
+    var swiper3 = new Swiper('.swiper-container3', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      parallax: true,
+      autoplay: 5000,
+      speed: 600,
+      preloadImages: false,
+      lazyLoading: true,
+      loop: true
+    });
+    var swiper_menu = new Swiper('.swiper-container-menu', {
+      slidesPerView: 'auto',
+      freeMode: true,
+      mousewheel: true,
+      grabCursor: true
+    });
+    var swiper = new Swiper('.swiper-container-book', {
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      paginationClickable: true,
+      slidesPerView: 3,
+      spaceBetween: 50,
+      grabCursor: true,
+      autoplay: 5000,
+      loop: true,
+      breakpoints: {
+        2000: {
+          slidesPerView: 3,
+          spaceBetween: 50
+        },
+        1199: {
+          slidesPerView: 3,
+          spaceBetween: 50
+        },
+        991: {
+          slidesPerView: 2,
+          spaceBetween: 50
+        },
+        767: {
+          slidesPerView: 1,
+          spaceBetween: 0
+        },
+      }
+    });
+    var swiper = new Swiper('.swiper-container-book2', {
+        spaceBetween: 20,
+        loop: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        autoplay: 6000,
+        pagination: '.swiper-pagination-book2',
+        paginationClickable: true
     });
     //焦点图移入移出效果
     $(".swiper-container1").mouseenter(function () {
@@ -48,21 +101,96 @@ script.
     }).mouseleave(function () {
       swiper2.startAutoplay();
     });
-    //右侧展开
-    $(".content").first().find(".fold").css("display", "none");
-    $(".content").first().find(".unfold").css("display", "block");
-    $(".content").hover(function () {
-      $(".fold").css("display", "none");
-      $(".unfold").css("display", "block");
-      $(this).siblings(".content").find(".fold").css("display", "block");
-      $(this).siblings(".content").find(".unfold").css("display", "none");
+    $(".swiper-container3").mouseenter(function () {
+      swiper3.stopAutoplay();
+    }).mouseleave(function () {
+      swiper3.startAutoplay();
     });
-    $('.pd_top').pgwMenu({
-      mainClassName: 'pd_top',
-      dropDownLabel: '导航',
-      viewMoreLabel: '更多',
-      viewMoreMaxWidth: 100
+    //右侧展开
+    var _tabs = $(".rtw04");
+    _tabs.each(function(){
+      var _tab = $(this),
+          _tabcon = _tab.find(".tab_con"),
+          _fold = _tabcon.find(".fold"),
+          _unfold = _tabcon.find(".unfold");
+      _fold.first().css("display", "none");
+      _unfold.first().css("display", "block");
+      _tabcon.hover(function () {
+        var _thiscon = $(this);
+        _fold.css("display", "none");
+        _unfold.css("display", "block");
+        _thiscon.siblings(_tabcon).find(".fold").css("display", "block");
+        _thiscon.siblings(_tabcon).find(".unfold").css("display", "none");
+      });
+    });
+    //头图展开
+    var _banner = $(".unfold_banner"),
+        _bpic = _banner.find(".backpic"),
+        _icon = _banner.find(".icon"),
+        _hicon = _banner.find(".hide_icon"),
+        _title = _banner.find("h2"),
+        _abs = _banner.find("span"),
+        _focus = $(".focus");
+    var _bannerH = _banner.offset().top;
+    //console.log($(".unfold_banner").offset().top);
+    $(window).scroll(function () {
+      var _scroH = $(this).scrollTop();
+      if (_scroH - _bannerH >= 20) {
+        _bpic.slideUp("slow");
+        _icon.fadeOut();
+        _hicon.fadeIn();
+        _title.removeClass("white_title").addClass("black_title");
+        _abs.removeClass("white_span").addClass("black_span");
+        _focus.addClass("top_focus");
+      } else {
+        _bpic.slideDown("slow");
+        _icon.fadeIn();
+        _hicon.fadeOut();
+        _title.removeClass("black_title").addClass("white_title");
+        _abs.removeClass("black_span").addClass("white_span");
+        _focus.removeClass("top_focus");
+      }
+    });
+    //右侧分享
+    var _share = $(".zt_share");
+    $(window).scroll(function () {
+      var _winW = $(window).width(),
+          _scroH = $(this).scrollTop();
+      if (_scroH >= 500 && _winW >=980) {
+        _share.fadeIn();
+      } else {
+        _share.fadeOut();
+      }
+    });
+    //定位按钮
+    var _column = $(".ysk_menu"),
+        _columnH = _column.offset().top,
+        _rolling = 0;
+    $(window).scroll(function () {
+      var _scroH = $(this).scrollTop(),
+          timer;
+      //console.log(_scroH);
+      if (_scroH - _columnH >= 0) {
+        _column.css("position","fixed");
+        _column.css("top","5px");
+      } else {
+        _column.css("position","relative");
+      };
+      if (_scroH - _rolling != 0) {
+        _column.show();
+        timer = setTimeout(function(){
+          _column.fadeOut();
+        },6000);
+      }
+      _column.mouseenter(function(){
+        clearTimeout(timer);
+      });
+      _column.mouseleave(function(){
+        timer = setTimeout(function(){
+          _column.fadeOut();
+        },4000);
+      });
+      //console.log(_scroH - _rolling);
+      _rolling = _scroH;
     });
   })
-
-

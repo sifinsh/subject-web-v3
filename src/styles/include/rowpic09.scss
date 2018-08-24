@@ -1,0 +1,115 @@
+.tltw09 {
+    height: 88px;
+    background-color: #eee;
+    margin: 10px 0 20px;
+    .pic {
+        position: relative;
+        width: 88px;
+        height: 88px;
+        float: left;
+        img {
+            position: absolute;
+            bottom: 8px;
+            left: 8px;
+            width: 100%;
+        }
+    }
+    .text {
+        float: left;
+        width: 70%;
+        padding-left: 20px;
+        h2 {
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: bold;
+            color: #000;
+            max-height: 20px;
+            margin: 10px 0 6px;
+            overflow: hidden;
+            a {
+                color: #000;
+            }
+        }
+        span {
+            font-size: 14px;
+            line-height: 1.4;
+            color: #666;
+            max-height: 40px;
+            display: block;
+            overflow: hidden;
+        }
+    }
+}
+
+.tltw09:hover {
+    .pic {
+        img {
+            transform: translate(0, -4px);
+        }
+    }
+    .text {
+        h2 {
+            a {
+                color: $color-red;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .tltw09 {
+        height: 66px;
+        .pic {
+            width: 66px;
+            height: 66px;
+        }
+        .text {
+            width: 70%;
+            h2 {
+                font-size: 16px;
+                line-height: 1.5;
+                max-height: 48px;
+                margin: 8px 0 6px;
+                a {
+                    color: #000;
+                }
+            }
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .tltw09 {
+        margin: 0.6rem 0 0.2rem 0;
+        height: 3rem;
+        .pic {
+            position: relative;
+            width: 3rem;
+            height: 3rem;
+            float: left;
+            img {
+                bottom: 0.4rem;
+                left: 0.4rem;
+            }
+        }
+        .text {
+            float: left;
+            width: 6.8rem;
+            padding-left: 0.8rem;
+            h2 {
+                font-size: 0.44rem;
+                line-height: 1.5;
+                max-height: 1.32rem;
+                margin: 0.4rem 0 0.2rem;
+            }
+            span {
+                font-size: 0.38rem;
+                line-height: 1.5;
+                max-height: 1.14rem;
+            }
+        }
+    }
+}

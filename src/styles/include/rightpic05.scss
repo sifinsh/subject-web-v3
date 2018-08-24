@@ -1,0 +1,108 @@
+.rtw05 {
+    h2 {
+        font-size: 20px;
+        line-height: 1.2;
+        color: #2b2b2b;
+        font-weight: bold;
+        background: url(http://www.qstheory.cn/n7/images/ceshi/v7_column_20171102_02.jpg) 0 11px no-repeat;
+        max-height: 48px;
+        overflow: hidden;
+        padding-left: 15px;
+        margin: 20px 0 0 0;
+        a {
+            color: #2b2b2b;
+        }
+    }
+    .author {
+        font-size: 14px;
+        font-weight: bold;
+        color: #2b2b2b;
+        line-height: 1.5;
+        display: block;
+        margin: 10px 0 0 0;
+    }
+    .company {
+        font-size: 12px;
+        color: #666;
+        line-height: 1.5;
+        display: block;
+        margin: 5px 0 0 0;
+    }
+    .pic {
+        width: 100%;
+        margin: 15px 0 0 0;
+        overflow: hidden;
+        img {
+            width: 100%;
+            transform: scale(1, 1);
+            -webkit-transform: scale(1, 1);
+            -moz-transform: scale(1, 1);
+            -o-transform: scale(1, 1);
+        }
+    }
+    .abs {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.8;
+        display: block;
+        margin: 15px 0;
+        max-height: 76px;
+        overflow: hidden;
+    }
+}
+
+.rtw05:hover {
+    h2 {
+        a {
+            color: $color-red;
+        }
+    }
+    .pic {
+        img {
+            transform: scale(1.1, 1.1);
+            -webkit-transform: scale(1.1, 1.1);
+            -moz-transform: scale(1.1, 1.1);
+            -o-transform: scale(1.1, 1.1);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .rtw05 {
+        padding: 0.5rem 0.5rem 0.6rem;
+        overflow: hidden;
+        .pic {
+            margin: 0.2rem 0.4rem 0 0;
+            width: 50%;
+            float: left;
+        }
+        h2 {
+            font-size: 0.44rem;
+            line-height: 1.5;
+            color: #2b2b2b;
+            font-weight: bold;
+            background: none;
+            max-height: 1.32rem;
+            padding-left: 0;
+            margin: 0;
+        }
+        .author {
+            display: none;
+        }
+        .company {
+            display: none;
+        }
+        .abs {
+            font-size: 0.38rem;
+            margin: 0.3rem 0 0;
+            max-height: 2.06rem;
+        }
+    }
+    .rtw05:hover {
+        .pic {
+            img {
+                transform: none;
+            }
+        }
+    }
+}

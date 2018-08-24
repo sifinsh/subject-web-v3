@@ -1,0 +1,62 @@
+.bt01 {
+    dl {
+        padding: 0;
+        margin: 0 0 25px 0;
+        dt {
+            font-size: 24px;
+            line-height: 1.5;
+            color: #2b2b2b;
+            font-weight: bold;
+            background: url(http://www.qstheory.cn/n7/images/ceshi/v7_column_20171102_02.jpg) 0 16px no-repeat;
+            padding-left: 20px;
+            max-height: 36px;
+            overflow: hidden;
+            margin: 0 0 8px 0;
+            transition: .3s ease-out;
+            a {
+                color: #2b2b2b;
+            }
+        }
+        dd {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
+            max-height: 21px;
+            overflow: hidden;
+        }
+    }
+    dl:hover {
+        dt {
+            transform: translate(2px, 0);
+            a {
+                color: #cc0000;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .bt01 {
+        dl {
+            padding: 0;
+            margin: 0.4rem 0.5rem 0.4rem 0.4rem;
+            dt {
+                font-size: 0.44rem;
+                background: url(http://www.qstheory.cn/n7/images/ceshi/v7_column_20171102_02.jpg) 0 0.25rem no-repeat;
+                padding-left: 0.3rem;
+                max-height: 0.66rem;
+                margin: 0 0 0.1rem 0;
+            }
+            dd {
+                font-size: 0.38rem;
+                max-height: 0.57rem;
+                padding-left: 0.3rem;
+            }
+        }
+        dl:hover {
+            dt {
+                transform: none;
+            }
+        }
+    }
+}

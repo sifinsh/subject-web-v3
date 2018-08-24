@@ -1,0 +1,61 @@
+.tltw05 {
+    margin: 0 0 30px;
+    overflow: hidden;
+    .pic {
+        overflow: hidden;
+        img {
+            width: 100%;
+            transform: scale(1, 1);
+        }
+    }
+    .text {
+        background-color: #ededed;
+        padding: 15px 10px;
+        h2 {
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: bold;
+            color: #000;
+            margin: 0;
+            max-height: 48px;
+            overflow: hidden;
+            a {
+                color: #000;
+            }
+        }
+    }
+}
+
+.tltw05:hover {
+    .pic {
+        img {
+            transform: scale(1.1, 1.1);
+        }
+    }
+    .text {
+        h2 {
+            a {
+                color: $color-red;
+            }
+        }
+    }
+}  
+
+@media (max-width: 767px) {
+    .tltw05 {
+        margin: 0 0.1rem 0.2rem;
+        .text {
+            h2 {
+                font-size: 0.44rem;
+                max-height: 1.32rem;
+            }
+        }
+    }
+    .tltw05:hover {
+        .pic {
+            img {
+                transform: scale(1, 1);
+            }
+        }
+    }
+}

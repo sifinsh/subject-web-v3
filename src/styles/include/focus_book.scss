@@ -1,0 +1,142 @@
+.focus_book {
+    position: relative;
+    .book-prev {
+        left: 10px;
+        top: 50%;
+        margin: -22px 0 0 0;
+        opacity: 0.3;
+    }
+    .book-next {
+        right: 10px;
+        top: 50%;
+        margin: -22px 0 0 0;
+        opacity: 0.3;
+    }
+}
+
+.swiper-container-book {
+    padding: 0 100px;
+    margin: 0 50px;
+    .swiper-slide {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .swiper-container-book {
+        padding: 0 1rem;
+        margin: 0 1.2rem;
+        .swiper-slide {
+            text-align: center;
+            img {
+                width: 85%;
+            }
+        }
+    }
+}
+
+.swiper-container-book2 {
+    width: 100%;
+	margin: 0 auto;
+	padding: 0 auto;
+	height: 750px;
+    .swiper-slide {
+        text-align: center;
+        width: 929px;
+        height: 657px;
+        img {
+            width: 100%;
+        }
+    }
+    .swiper-slide-next {
+        img {
+            width: 80%;
+            height: auto;
+            margin-top: 65px;
+        }
+    }
+    .swiper-slide-prev {
+        img {
+            width: 80%;
+            height: auto;
+            margin-top: 65px;
+        }
+    }
+    .swiper-pagination-book2 {
+        width: 100%;
+        bottom: 10px;
+        text-align: center;
+        background: url(http://www.qstheory.cn/n7/images/zt_xuanyan_20180813_10.jpg) 0 2px repeat-x;
+        .swiper-pagination-bullet {
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            background-color: #c4c4c4;
+            margin: 0 10px;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: $color-red;
+        }
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .swiper-container-book2 {
+        height: 500px;
+        .swiper-slide {
+            text-align: center;
+            width: 600px;
+            height: 425px;
+            img {
+                width: 100%;
+            }
+        }
+        .swiper-slide-next {
+            img {
+                width: 80%;
+                margin-top: 40px;
+            }
+        }
+        .swiper-slide-prev {
+            img {
+                width: 80%;
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .swiper-container-book2 {
+        height: 6.6rem;
+        .swiper-slide {
+            text-align: center;
+            width: 8rem;
+            height: 5rem;
+        }
+        .swiper-slide-next {
+            img {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+        .swiper-slide-prev {
+            img {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+        .swiper-pagination-book2 {
+            bottom: 0.1rem;
+            background: none;
+            .swiper-pagination-bullet {
+                width: 0.3rem;
+                height: 0.3rem;
+                margin: 0 0.2rem;
+            }
+        }
+    }
+}

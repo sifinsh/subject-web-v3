@@ -1,0 +1,105 @@
+.tltw04 {
+    background-color: #fafafa;
+    margin-bottom: 30px;
+    padding: 20px 25px;
+    border: solid 1px #eee;
+    .subtitle {
+        height: 26px;
+        overflow: hidden;
+        background: url(http://www.qstheory.cn/n6/images/d6_guofang_0106_01.png) left bottom repeat-x;
+        .t_con {
+            height: 26px;
+            font-size: 22px;
+            line-height: 26px;
+            font-weight: bold;
+            color: #fff;
+            background-color: $color-red;
+            border-right: solid 8px #fafafa;
+            padding: 0 4px;
+            float: left;
+            display: inline;
+        }
+    }
+    .pic {
+        margin: 15px 0 0 0;
+        img {
+            width: 100%;
+        }
+    }
+    h2 {
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: bold;
+        color: #000;
+        max-height: 54px;
+        margin: 15px 0 10px;
+        overflow: hidden;
+        a {
+            color: #000;
+        }
+    }
+    .abs {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #666;
+        max-height: 76px;
+        overflow: hidden;
+    }
+}
+
+.tltw04:hover {
+    h2 {
+        a {
+            color: $color-red;
+        }
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .tltw04 {
+        padding: 10px;
+        .subtitle {
+            height: 20px;
+            .t_con {
+                height: 20px;
+                font-size: 16px;
+                line-height: 20px;
+                border-right: solid 5px #fafafa;
+            }
+        }
+        h2 {
+            font-size: 16px;
+            max-height: 48px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .tltw04 {
+        margin: 0 0.1rem 0.2rem;
+        padding: 0.3rem 0.2rem;
+        .subtitle {
+            background: none;
+            .t_con {
+                height: 0.6rem;
+                font-size: 0.4rem;
+                line-height: 1.5;
+                padding: 0 0.1rem;
+            }
+        }
+        .pic {
+            margin: 0;
+        }
+        h2 {
+            font-size: 0.44rem;
+            line-height: 1.5;
+            max-height: 1.32rem;
+            margin: 0.2rem 0 0.1rem;
+        }
+        .abs {
+            font-size: 0.38rem;
+            line-height: 1.5;
+            max-height: 1.71rem;
+        }
+    }
+}

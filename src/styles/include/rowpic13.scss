@@ -1,0 +1,111 @@
+.tltw13 {
+    background-color: #f9f9f9;
+    h2 {
+        border-left: 15px solid $color-red;
+        font-size: 55px;
+        font-family: "Microsoft YaHei";
+        margin: 0 0 50px 0;
+        font-weight: bold;
+        color: #000;
+        line-height: 1.2;
+        padding: 40px 20px 0 40px;
+        a {
+            color: #000;
+        }
+    }
+    h3 {
+        font-size: 28px;
+        color: #000;
+        margin: 0 40px 30px;
+        font-weight: bold;
+        font-family: "Microsoft YaHei";
+        line-height: 1.5;
+        padding-left: 20px;
+        background: url(http://www.qstheory.cn/n7/images/ceshi/v7_column_20171102_02.jpg) 0 18px no-repeat;
+    }
+    span {
+        font-size: 16px;
+        color: #000;
+        line-height: 2;
+        padding: 0 50px 50px;
+        display: block;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .padd_b_50 {
+        padding: 0 50px 50px;
+    }
+    .padd_b_30 {
+        padding: 0 50px 30px;
+    }
+    .column {
+        background-color: $color-red;
+        padding: 5px 0;
+        margin: 0 0 50px;
+        h4 {
+            margin: 0 20px;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.5;
+            max-height: 36px;
+            overflow: hidden;
+        }
+    }
+}
+
+.tltw13:hover {
+    h2 {
+        a {
+            color: $color-red;
+        }
+    }
+    h3 {
+        a {
+            color: $color-red;
+        }
+    }
+    img {
+        transform: translate(0, -4px);
+    }
+}
+
+@media (max-width: 767px) {
+    .tltw13 {
+        h2 {
+            border-left: 5px solid $color-red;
+            font-size: 0.7rem;
+            margin: 0 0 0.5rem 0;
+            padding: 0.4rem 0.4rem 0 0.4rem;
+        }
+        h3 {
+            font-size: 0.5rem;
+            margin: 0 1rem 0.4rem;
+            padding-left: 0.3rem;
+            background: url(http://www.qstheory.cn/n7/images/ceshi/v7_column_20171102_02.jpg) 0 0.23rem no-repeat;
+        }
+        span {
+            font-size: 0.38rem;
+            line-height: 1.8;
+            padding: 0 1rem 1rem;
+        }
+        .padd_b_50 {
+            padding: 0 1rem 0.4rem;
+        }
+        .padd_b_30 {
+            padding: 0 1rem 0.4rem;
+        }
+        .column {
+            padding: 0.1rem 0;
+            margin: 0 0 0.4rem;
+            h4 {
+                margin: 0 0.4rem;
+                font-size: 0.5rem;
+                max-height: 0.75rem;
+            }
+        }
+    }
+}

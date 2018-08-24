@@ -1,0 +1,148 @@
+.unfold_banner {
+    width: 100%;
+    height: 894px;
+    position: relative;
+    .backpic {
+        position: absolute;
+        width: 100%;
+        height: 894px;
+        z-index: -1;
+    }
+    .sbackpic {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        z-index: -2;
+    }
+    .icon {
+        position: absolute;
+        left: 50%;
+        top: 260px;
+        margin: 0 0 0 -152px;
+        width: 304px;
+        height: 56px;
+    }
+    .hide_icon {
+        position: absolute;
+        left: 50%;
+        top: 260px;
+        margin: 0 0 0 -152px;
+        width: 304px;
+        height: 56px;
+        display: none;
+    }
+    h2 {
+        position: absolute;
+        left: 50%;
+        top: 390px;
+        margin: 0 0 0 -460px;
+        font-size: 65px;
+        font-weight: bold;
+        font-family: "微软雅黑";
+        text-align: center;
+        width: 920px;
+    }
+    .white_title {
+        color: #fff;
+        text-shadow: 2px 3px 1px #000;
+    }
+    .black_title {
+        color: #3b3b3b;
+        text-shadow: none;
+    }
+    span {
+        position: absolute;
+        left: 50%;
+        top: 540px;
+        margin: 0 0 0 -350px;
+        font-size: 20px;
+        display: block;
+        padding-left: 20px;
+        line-height: 1.8;
+        width: 700px;
+    }
+    .white_span {
+        color: #fff;
+        border-left: 5px solid #fff;
+    }
+    .black_span {
+        color: #3b3b3b;
+        border-left: 5px solid #cc3333;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .unfold_banner {
+        height: 700px;
+        .backpic {
+            height: 700px;
+        }
+        .sbackpic {
+            height: 100px;
+        }
+        .icon {
+            top: 200px;
+        }
+        .hide_icon {
+            top: 200px;
+        }
+        h2 {
+            top: 340px;
+            margin: 0 0 0 -300px;
+            font-size: 48px;
+            width: 600px;
+        }
+        span {
+            top: 450px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .unfold_banner {
+        height: 15rem;
+        .backpic {
+            height: 15rem;;
+        }
+        .sbackpic {
+            height: 2rem;
+        }
+        .icon {
+            top: 2rem;
+            left: 0;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .icon img {
+            width: 6rem;
+        }
+        .hide_icon {
+            top: 2rem;
+            left: 0;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .hide_icon img {
+            width: 6rem;
+        }
+        h2 {
+            top: 4.5rem;
+            margin: 0;
+            font-size: 0.8rem;
+            width: 100%;
+            padding: 0 0.8rem;
+            left: 0;
+        }
+        span {
+            top: 7.5rem;
+            font-size: 0.4rem;
+            left: 0;
+            margin: 0 0.3rem 0 0.6rem;
+            padding-left: 0.5rem;
+            width: 90%;
+        }
+    }
+}

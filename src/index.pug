@@ -3,16 +3,72 @@ html
     head
         include views/head
     body
+        include views/ztshare
         include views/wxshare
-        include views/nav
+        //include views/nav
+        include views/swiper_nav
+        include views/menu
         .container
-            include views/banner
+            include views/banner01
+        include views/banner02
+        .container
+            include views/editernote
             include views/headtitle
             .row
                 .col-md-8
-                    include views/focus
-                    include views/pictext01
-                    include views/pictext02
+                    .height50p
+                    .explain_blue 页面2/3宽序列
+                    .row
+                        include views/focus
+                        include views/pictext01
+                        include views/pictext02
+                        include views/pictext03
+                        include views/pictext04
+                        include views/pictext05
+                        include views/titletext01
+                .col-md-4
+                    .height50p
+                    .explain_blue 页面1/3宽序列
+                    .row
+                        include views/righttext01
+                        include views/righttext02
+                        .clear.visible-sm
+                        include views/rightpic01
+                        include views/rightpic02
+                        .clear.visible-sm
+                        include views/rightpic03
+                        include views/rightpic04
+                        .clear.visible-sm
+                        include views/rightpic05
+                        include views/righttext03
+                        .clear.visible-sm
+                        include views/rightpic06
+            .row
+                .col-md-12
+                    .height50p
+                    .explain_blue 页面通栏序列
+                include views/focusrow
+                include views/rowpic01
+                include views/rowpic02
+                include views/rowpic03
+                include views/rowpic04
+                include views/rowpic05
+                include views/rowpic06
+                include views/rowpic07
+                include views/rowpic08
+                include views/rowpic09
+                include views/rowpic10
+                include views/rowpic11
+                include views/rowpic12
+                include views/rowpic13
+                include views/rowpic14
+                include views/rowtext01
+                include views/rowtext02
+                include views/focusrow02
+        include views/focusrow03
+        .container
+            .row
+                include views/producer
         include views/foot
         include views/bottom
         script(src="http://w.cnzz.com/c.php?id=30019853")

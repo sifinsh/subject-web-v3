@@ -1,0 +1,72 @@
+.rtw01 {
+    .pic {
+        img {
+            width: 100%;
+            padding: 0 0 20px 0;
+        }
+    }
+    .text {
+        h2,
+        h3 {
+            font-size: 18px;
+            color: #2b2b2b;
+            line-height: 1.5;
+            font-weight: bold;
+            max-height: 54px;
+            margin: 0;
+            overflow: hidden;
+            a {
+                color: #2b2b2b;
+            }
+        }
+        h3 {
+            margin: 10px 0;
+        }
+        span {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
+            max-height: 42px;
+            overflow: hidden;
+            display: block;
+            margin: 5px 0 0 0;
+        }
+    }
+}
+
+.rtw01:hover {
+    .text {
+        h2 {
+            a {
+                color: $color-red;
+            }
+        }
+        h3 {
+            a {
+                color: $color-red;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .rtw01 {
+        padding: 0.5rem 0.4rem 0.3rem;
+        .text {
+            padding-left: 0.3rem;
+            h2,
+            h3 {
+                font-size: 0.44rem;
+                max-height: 1.32rem;
+            }
+            h3 {
+                margin: 0.5rem 0;
+            }
+            span {
+                font-size: 0.38rem;
+                max-height: 1.14rem;
+                margin: 0.1rem 0 0 0;
+            }
+        }
+    }
+}

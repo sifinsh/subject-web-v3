@@ -1,0 +1,69 @@
+.tw03 {
+    overflow: hidden;
+    padding: 5px 0 25px 0;
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.5;
+        max-height: 36px;
+        overflow: hidden;
+        margin: 20px 0 10px;
+        a {
+            color: #2b2b2b;
+        }
+    }
+    span {
+        font-size: 14px;
+        line-height: 1.8;
+        max-height: 51px;
+        overflow: hidden;
+        display: block;
+    }
+    img {
+        float: left;
+        width: 100%;
+        max-width: 145px;
+        margin: 20px 32px 0 0;
+        transition: .3s ease-out;
+    }
+}
+
+.tw03:hover {
+    h2 {
+        a {
+            color: $color-red;
+        }
+    }
+    img {
+        transform: translate(4px, 0);
+    }
+}
+
+@media (max-width: 767px) {
+    .tw03 {
+        padding: 0.5rem 0.4rem;
+        overflow: hidden;
+        h2 {
+            font-size: 0.44rem;
+            line-height: 1.5;
+            max-height: 1.32rem;
+            margin: 0;
+        }
+        span {
+            font-size: 0.38rem;
+            line-height: 1.5;
+            max-height: 1.14rem;
+        }
+        img {
+            float: left;
+            margin: 0;
+            padding-right: 0.5rem;
+            max-width: 40%;
+        }
+    }
+    .tw03:hover {
+        img {
+            transform: none;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.tw04 {
+    overflow: hidden;
+    padding: 20px 0 25px 0;
+    .title {
+        width: 100%;
+        h2 {
+            font-size: 24px;
+            color: #2b2b2b;
+            font-weight: bold;
+            line-height: 1.5;
+            max-height: 36px;
+            overflow: hidden;
+            margin: 0 0 10px;
+            a {
+                color: #2b2b2b;
+            }
+        }
+    }
+    .text {
+        overflow: hidden;
+        span {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.8;
+            max-height: 97px;
+            overflow: hidden;
+            display: block;
+        }
+        img {
+            width: 30%;
+            float: left;
+            margin: 6px 30px 0 0;
+            transition: .3s ease-out;
+        }
+    }
+}
+
+.tw04:hover {
+    .title {
+        h2 {
+            a {
+                color: $color-red;
+            }
+        }
+    }
+    .text {
+        img {
+            transform: translate(0, -4px);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .tw04 {
+        padding: 0.5rem 0.4rem;
+        overflow: hidden;
+        .title {
+            display: none;
+        }
+        .title2 {
+            h2 {
+                display: block;
+                font-weight: bold;
+                font-size: 0.44rem;
+                line-height: 1.5;
+                max-height: 1.32rem;
+                margin: 0.1rem 0 0 0;
+                overflow: hidden;
+            }
+        }
+        .text {
+            span {
+                display: none;
+            }
+            img {
+                margin: 0 0.5rem 0 0;
+                width: 40%;
+            }
+        }
+    }
+    .tw04:hover {
+        .title2 {
+            h2 {
+                a {
+                    color: $color-red;
+                }
+            }
+        }
+        .text {
+            img {
+                transform: none;
+            }
+        }
+    }
+}

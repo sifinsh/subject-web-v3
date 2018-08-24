@@ -83,6 +83,7 @@ window.onload = function () {
   }
   oAssBtnT.onclick = replaceT;
   oCopyBtnT.onclick = copyStrT;
+  //通用
   var aInfoN = document.querySelectorAll('.info_n'),
     aTmpN = document.querySelectorAll('.templates_n'),
     aOrderN = document.querySelectorAll('.order_n'),

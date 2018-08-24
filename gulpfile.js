@@ -99,7 +99,7 @@ gulp.task('default', ['build'], function () {
     });
 
     // 看守所有.scss档
-    gulp.watch('./src/styles/**/*', ['styles']);
+    gulp.watch('./src/styles/**/*.scss', ['styles']);
 
     // 看守所有.js档
     gulp.watch('./src/scripts/**/*.js', ['scripts']);

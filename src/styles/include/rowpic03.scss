@@ -1,0 +1,81 @@
+.tltw03 {
+    margin: 0 0 30px;
+    .pic {
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        img {
+            width: 100%;
+            transform: scale(1, 1);
+        }
+    }
+    .title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 99;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 2;
+        color: #fff;
+        max-height: 32px;
+        overflow: hidden;
+        a {
+            color: #fff;
+        }
+        a:hover {
+            color: #fff;
+        }
+    }
+    .text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 24px;
+        width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)) repeat-x scroll 0 bottom rgba(0, 0, 0, 0);
+    }
+    .abs {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #666;
+        display: block;
+        margin: 15px 0 0 0;
+        max-height: 76px;
+        overflow: hidden;
+        a {
+            color: $color-red;
+        }
+    }
+}
+
+.tltw03:hover {
+    .pic {
+        img {
+            transform: scale(1.1, 1.1);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .tltw03 {
+        margin: 0;
+        padding: 0.2rem 0.05rem;
+        .title {
+            font-size: 0.44rem;
+            max-height: 0.88rem;
+            margin-bottom: 0;
+        }
+        .abs {
+            font-size: 0.38rem;
+            line-height: 1.5;
+            max-height: 1.71rem;
+            margin: 0.2rem 0 0 0;
+        }
+    }
+    .tltw03:hover .pic img {
+        transform: scale(1, 1);
+    }
+}

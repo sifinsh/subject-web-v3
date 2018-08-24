@@ -1,0 +1,94 @@
+.tltw01 {
+    margin: 0 0 30px;
+    .pic {
+        overflow: hidden;
+        img {
+            width: 100%;
+            transform: scale(1, 1);
+        }
+    }
+    .text {
+        background-color: #f2f2f2;
+        padding: 15px 15px 20px;
+        h2 {
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: bold;
+            color: #2b2b2b;
+            margin: 0;
+            max-height: 54px;
+            overflow: hidden;
+            margin: 0px 0 10px;
+            a {
+                color: #2b2b2b;
+            }
+        }
+        span {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.8;
+            max-height: 76px;
+            overflow: hidden;
+            display: block;
+            margin: 5px 0 0 0;
+        }
+    }
+}
+
+.tltw01:hover {
+    .pic {
+        img {
+            transform: scale(1.1, 1.1);
+        }
+    }
+    .text {
+        h2 {
+            a {
+                color: #cc0000;
+            }
+        }
+    }
+}
+
+@media (max-width: 1052px) and (min-width: 768px) {
+    .tltw01 {
+        .text {
+            padding: 10px;
+            h2 {
+                font-size: 14px;
+                max-height: 21px;
+            }
+            span {
+                font-size: 12px;
+                max-height: 36px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .tltw01 {
+        margin: 0;
+        padding: 0.2rem 0.05rem;
+        .text {
+            padding: 0.2rem;
+            h2 {
+                font-size: 0.44rem;
+                max-height: 1.32rem;
+            }
+            span {
+                font-size: 0.38rem;
+                line-height: 1.5;
+                max-height: 1.14rem;
+                margin: 0.1rem 0 0 0;
+            }
+        }
+    }
+    .tltw01:hover {
+        .pic {
+            img {
+                transform: none;
+            }
+        }
+    }
+}

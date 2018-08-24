@@ -1,6 +1,6 @@
 .tw01 {
   width: 100%;
-  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
   .pic {
     width: 100%;
     img {
@@ -41,7 +41,7 @@
   .text {
     h2 {
       a {
-        color: #cc0000;
+        color: $color-red;
       }
     }
   }
@@ -49,17 +49,32 @@
 
 @media (max-width: 767px) {
   .tw01 {
-    width: 99%;
-    margin: 0 auto 0.5rem;
+    width: 100%;
+    padding: 0.3rem 0.4rem;
+    overflow: hidden;
+    .pic {
+      width: 40%;
+      float: left;
+      img {
+        width: 100%;
+        transition: .3s ease-out;
+      }
+    }
     .text {
+      float: left;
+      width: 60%;
+      padding-left: 0.5rem;
       h2 {
         font-size: 0.44rem;
-        line-height: 1.2;
-        max-height: 1.02rem;
-        margin: 0.4rem 0.2rem 0 0.2rem;
+        line-height: 1.4;
+        max-height: 1.24rem;
+        margin: 0;
       }
       span {
-        display: none;
+        font-size: 0.38rem;
+        line-height: 1.5;
+        max-height: 1.14rem;
+        margin: 0.1rem 0 0 0;
       }
     }
   }

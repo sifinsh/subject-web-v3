@@ -1,0 +1,69 @@
+.rtw06 {
+    border: solid 1px #e5e5e5;
+    padding: 15px;
+    margin: 0 0 15px 0;
+    .title {
+        overflow: hidden;
+        .pic {
+            width: 30px;
+            height: 30px;
+            float: left;
+            display: inline;
+            margin: 0 18px 0 0;
+            img {
+                width: 100%;
+            }
+        }
+        .text {
+            float: left;
+            display: inline;
+            color: #ccc;
+            font-size: 14px;
+            line-height: 30px;
+            span {
+                color: #2b2b2b;
+                a {
+                    color: #2b2b2b;
+                }
+            }
+        }
+    }
+    .abs {
+        font-size: 14px;
+        color: #2b2b2b;
+        line-height: 1.5;
+        max-height: 21px;
+        overflow: hidden;
+        display: block;
+        margin: 10px 0 0 0;
+    }
+}
+
+.rtw06:hover {
+    .title {
+        .text {
+            span {
+                a {
+                    color: $color-red;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .rtw06 {
+        padding: 0.3rem;
+        margin: 0 0.3rem 0.3rem;
+        .title {
+            .text {
+                font-size: 0.5rem;
+            }
+        }
+        .abs {
+            font-size: 0.44rem;
+            max-height: 0.66rem;
+            margin: 0.2rem 0 0 0;
+        }
+    }
+}

@@ -1,89 +1,98 @@
-.column_n
-  .height50p
-  .explain 图文01
-  pre.declare
-    | 图片为
-    span.red 202×135
-    | ，也可使用焦点图二的428×285，图片必须等高。
-    | 标题最多
-    span.blue 2
-    | 行，最多
-    span.blue 22
-    | 个字，摘要最多
-    span.blue 4
-    | 行，最多
-    span.blue 56
-    | 个字。
-    | 如果采用2行6篇文章，则需注意
-    span.blue 图片高度必须相同，标题和摘要也尽量行数相同
-    |保持美观。
-    | 手机端每行隐藏第3篇文章，保留前2篇。手机端隐藏摘要，左右形式两篇分列。
-  .button_box
-    span 信息片ID
-    input.importbox_l.info_n(type="text")
-    | 　
-    span 循环
-    input.importbox_s.order_n(type="text")
-    span 次
-    | 　
-    button.assign_btn_n 参数赋值
-    button.copy_btn_n 复制代码
-  .row
-    .col-sm-4.col-xs-6
-      .tw01
-        .pic
-          a(href="#")
-            img(src="http://www.qstheory.cn/n7/images/ceshi/noneed_03.jpg", alt="")
-        .text
-          h2
-            a(href="#") 标题内容文字标题内容文字标题内容文字
-          span 摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字
-    .col-sm-4.col-xs-6
-      .tw01
-        .pic
-          a(href="#")
-            img(src="http://www.qstheory.cn/n7/images/ceshi/noneed_03.jpg", alt="")
-        .text
-          h2
-            a(href="#") 标题内容文字标题内容文字
-          span 摘要内容文字摘要内容文字摘要内容文字摘要内容文字
-    .col-sm-4.col-xs-6
-      .tw01.hidden-xs
-        .pic
-          a(href="#")
-            img(src="http://www.qstheory.cn/n7/images/ceshi/noneed_03.jpg", alt="")
-        .text
-          h2
-            a(href="#") 标题内容文字
-          span 摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字
-  .row
-    .col-sm-4.col-xs-6
-      .tw01
-        .pic
-          a(href="#")
-            img(src="http://www.qstheory.cn/n7/images/ceshi/noneed_03.jpg", alt="")
-        .text
-          h2
-            a(href="#") 标题内容文字标题内容文字标题内容文字
-          span 摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字
-    .col-sm-4.col-xs-6
-      .tw01
-        .pic
-          a(href="#")
-            img(src="http://www.qstheory.cn/n7/images/ceshi/noneed_03.jpg", alt="")
-        .text
-          h2
-            a(href="#") 标题内容文字标题
-          span 摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字
-    .col-sm-4.col-xs-6
-      .tw01.hidden-xs
-        .pic
-          a(href="#")
-            img(src="http://www.qstheory.cn/n7/images/ceshi/noneed_03.jpg", alt="")
-        .text
-          h2
-            a(href="#") 标题内容文字标题内容文字标题内容文字
-          span 摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字
-  .templates_n.hide
-    pre
-      code.temp-code nodeid="1" Repeat Begin=1 End=1
+.col-sm-12
+  .column_n
+    .height50p
+    .explain 左侧图文01
+      a(id="zctw01" name="zctw01")
+    pre.declare
+      | 图片为
+      span.red 202×135
+      | ，也可使用焦点图二的428×285，图片必须等高。
+      | 标题最多
+      span.blue 2
+      | 行，最多
+      span.blue 22
+      | 个字，摘要最多
+      span.blue 4
+      | 行，最多
+      span.blue 56
+      | 个字。
+      | 如果采用2行6篇文章，则需注意
+      span.blue 图片高度必须相同，标题和摘要也尽量行数相同
+      |保持美观。
+      | 手机端每行隐藏第3篇文章，保留前2篇。手机端隐藏摘要，左右形式两篇分列。
+    .button_box
+      span 信息片ID
+      input.importbox_l.info_n(type="text")
+      | 　
+      span 循环
+      input.importbox_s.order_n(type="text")
+      span 行
+      | 　
+      button.assign_btn_n 参数赋值
+      button.copy_btn_n 复制代码
+    .row
+      .line.visible-xs
+      .col-sm-4
+        .tw01.transdelay
+          .pic
+            a(href="#")
+              img(src="http://www.qstheory.cn/n7/images/ceshi/noneed_03.jpg", alt="")
+          .text
+            h2
+              a(href="#") 标题内容文字标题内容文字标题内容文字01
+            span 摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字
+      .line.visible-xs
+      .col-sm-4
+        .tw01.transdelay
+          .pic
+            a(href="#")
+              img(src="http://www.qstheory.cn/n7/images/ceshi/noneed_03.jpg", alt="")
+          .text
+            h2
+              a(href="#") 标题内容文字标题内容文字标题内容文字02
+            span 摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字
+      .line.visible-xs
+      .col-sm-4
+        .tw01.transdelay
+          .pic
+            a(href="#")
+              img(src="http://www.qstheory.cn/n7/images/ceshi/noneed_03.jpg", alt="")
+          .text
+            h2
+              a(href="#") 标题内容文字标题内容文字标题内容文字03
+            span 摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字
+    .row
+      .line.visible-xs
+      .col-sm-4
+        .tw01.transdelay
+          .pic
+            a(href="#")
+              img(src="http://www.qstheory.cn/n7/images/ceshi/noneed_03.jpg", alt="")
+          .text
+            h2
+              a(href="#") 标题内容文字标题内容文字标题内容文字04
+            span 摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字
+      .line.visible-xs
+      .col-sm-4
+        .tw01.transdelay
+          .pic
+            a(href="#")
+              img(src="http://www.qstheory.cn/n7/images/ceshi/noneed_03.jpg", alt="")
+          .text
+            h2
+              a(href="#") 标题内容文字标题内容文字标题内容文字05
+            span 摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字
+      .line.visible-xs
+      .col-sm-4
+        .tw01.transdelay
+          .pic
+            a(href="#")
+              img(src="http://www.qstheory.cn/n7/images/ceshi/noneed_03.jpg", alt="")
+          .text
+            h2
+              a(href="#") 标题内容文字标题内容文字标题内容文字06
+            span 摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字摘要内容文字
+      .line.visible-xs
+    .templates_n.hide
+      pre
+        code.temp-code nodeid="1" Repeat Begin=1 End=1
